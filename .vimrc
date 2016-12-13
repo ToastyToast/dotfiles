@@ -1,7 +1,7 @@
 set encoding=utf-8
 set fileencoding=utf-8
 set fileformat=unix
-
+    
 set nocompatible
 filetype off
 
@@ -32,6 +32,7 @@ set laststatus=2
 set backspace=2
 set tabstop=4
 set shiftwidth=4
+set expandtab
 
 set showmatch
 set textwidth=80
@@ -43,11 +44,11 @@ map <F4> :e %:p:s,.hpp$,.X123X,:s,.cpp$,.hpp,:s,.X123X$,.cpp,<CR>
 
 au BufNewFile,BufRead *.py
     \ set tabstop=4 |
-	\ set softtabstop=4 |
-	\ set shiftwidth=4 |
-	\ set expandtab |
-	\ set autoindent |
-	\ set fileformat=unix
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set expandtab |
+    \ set autoindent |
+    \ set fileformat=unix
 
 let python_highlight_all=1
 syntax on
