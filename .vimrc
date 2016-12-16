@@ -26,6 +26,7 @@ filetype plugin on
 set t_Co=256
 
 colors zenburn
+set background=dark
 set number
 set nocompatible
 set autoindent
