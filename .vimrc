@@ -53,6 +53,7 @@ au BufNewFile,BufRead *.py
 let python_highlight_all=1
 syntax on
 
+let g:airline_theme='luna'
 let NERDTreeIgnore = ['\.pyc$']
 let g:airline#extensions#tabline#enabled=1
 
