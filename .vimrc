@@ -42,7 +42,10 @@ set colorcolumn=+0
 map <F2> :bp<CR>
 map <F3> :bn<CR>
 map <F4> :e %:p:s,.hpp$,.X123X,:s,.cpp$,.hpp,:s,.X123X$,.cpp,<CR>
+nnoremap <F1> :NERDTree<CR>
 nnoremap <C-c> :bp\|bd #<CR>
+
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 
 au BufNewFile,BufRead *.py
     \ set tabstop=4 |
@@ -68,5 +71,9 @@ let g:airline#extensions#tabline#enabled=1
 "let g:syntastic_auto_loc_list=1
 "let g:syntastic_check_on_open=1
 "let g:syntastic_check_on_wq=0
+
+let g:ctrlp_map='<c-p>'
+let g:ctrlp_cmd='CtrlP'
+let g:ctrlp_working_path_mode='ra'
 
 set noshowmode
