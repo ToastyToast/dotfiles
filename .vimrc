@@ -13,13 +13,14 @@ Plugin 'VundleVim/Vundle.vim'
 "Plugin 'vim-syntastic/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'mhinz/vim-signify'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'jnurmine/Zenburn'
 
 call vundle#end()
 
-set compatible
 filetype plugin on
 
 set t_Co=256
@@ -41,6 +42,7 @@ set colorcolumn=+0
 map <F2> :bp<CR>
 map <F3> :bn<CR>
 map <F4> :e %:p:s,.hpp$,.X123X,:s,.cpp$,.hpp,:s,.X123X$,.cpp,<CR>
+nnoremap <C-c> :bp\|bd #<CR>
 
 au BufNewFile,BufRead *.py
     \ set tabstop=4 |
@@ -53,7 +55,7 @@ au BufNewFile,BufRead *.py
 let python_highlight_all=1
 syntax on
 
-let g:airline_theme='luna'
+let g:airline_theme='base16_ashes'
 let NERDTreeIgnore = ['\.pyc$']
 let g:airline#extensions#tabline#enabled=1
 
