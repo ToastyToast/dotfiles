@@ -40,6 +40,9 @@ set showmatch
 set textwidth=80
 set colorcolumn=+0
 
+set splitbelow
+set splitright
+
 map <F2> :bp<CR>
 map <F3> :bn<CR>
 nnoremap <F4> :NERDTreeToggle<CR>
